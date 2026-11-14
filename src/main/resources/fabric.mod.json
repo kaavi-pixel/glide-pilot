@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"id": "glidepilot",
+	"version": "${version}",
+	"name": "Glide Pilot",
+	"description": "Client-side elytra autopilot. Flies to coordinates or waypoints without rockets, follows terrain, waits for chunks, picks a safe landing spot and touches down without fall damage.",
+	"authors": ["Kavi Bhushan"],
+	"license": "CC0-1.0",
+	"icon": "assets/glidepilot/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["pro.bhushan.glidepilot.GlidePilot"],
+		"modmenu": ["pro.bhushan.glidepilot.config.ModMenuIntegration"]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"fabric-api": "*",
+		"minecraft": "~26.3",
+		"java": ">=25"
+	},
+	"suggests": { "modmenu": "*" }
+}
